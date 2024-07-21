@@ -74,7 +74,7 @@ body .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px;
+  padding: 10px 20px;
   margin-top: 20px;
   border-radius: 28px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -82,20 +82,28 @@ body .header {
 body .header .logo img {
   width: 100px;
 }
-body .header nav .headerUl {
+body .header .header-nav .headerUl {
   display: flex;
   gap: 30px;
 }
-body .header nav .headerUl li a {
+body .header .header-nav .headerUl li a {
   list-style: none;
   text-decoration: none;
   color: #1c458d;
   font-family: "Poppins";
-  font-size: 18px;
+  font-size: 15px;
 }
-body .header nav .headerUl li a:hover {
+body .header .header-nav .headerUl li a:hover {
   text-decoration: underline;
-  text-underline-offset: 15px;
+  text-underline-offset: 10px;
+}
+body .header .navBar {
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  body .header .navBar {
+    display: block;
+  }
 }
 body .header .btnIcons {
   display: flex;
@@ -108,6 +116,7 @@ body .header .btnIcons .btn {
   border-radius: 25px;
   padding: 8px 20px;
   color: #1c458d;
+  font-size: 13px;
 }
 body .header .btnIcons .btn:hover {
   background-color: #1c458d;
@@ -118,4 +127,40 @@ body .header .btnIcons .icons {
   display: flex;
   align-items: center;
   gap: 20px;
+}
+
+@media only screen and (max-width: 991px) {
+  .header .header-nav {
+    display: none;
+  }
+  .header .header-nav .navBar {
+    display: block;
+  }
+  .header .burgerNav {
+    padding: 250px 0;
+  }
+  .header .burgerNav .burgerUl {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 30px;
+  }
+  .header .burgerNav .burgerUl li a {
+    list-style: none;
+    text-decoration: none;
+    color: #1c458d;
+    font-family: "Poppins";
+    font-size: 25px;
+  }
+  .header .burgerNav .burgerUl li a:hover {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+  }
+  .header .btn {
+    display: none;
+  }
+}
+#home .homeSection .bgImgs .homeBg {
+  width: 300px;
 }/*# sourceMappingURL=main.css.map */

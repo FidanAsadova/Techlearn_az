@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="./assets/scss/main.css">
     <title>Techlearn Academy</title>
 </head>
-
 <body>
     <header>
         <div class="container">
@@ -22,13 +21,35 @@
                 <div class="logo">
                     <img src="./assets/images/logo-main-4.png" alt="logo">
                 </div>
-                <nav>
+                <nav class="header-nav">
                     <ul class="headerUl">
                         <li><a href="index.html">Əsas səhifə</a></li>
                         <li><a href="#">Tədris sahələri</a></li>
                         <li><a href="#">Haqqımızda</a></li>
                     </ul>
                 </nav>
+                <!-- <a class="text-decoration-none" target="_blank" href="#"><i class="fa-solid fa-bars navBar" style="color: #1C458D;">
+                    
+                </i></a> -->
+                <a class="text-decoration-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"><i class="fa-solid fa-bars navBar" style="color: #1C458D;"></i></a>
+                
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 id="offcanvasRightLabel"></h5>
+                        
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <nav class="burgerNav">
+                            <ul class="burgerUl">
+                                <li><a href="index.html">Əsas səhifə</a></li>
+                                <li><a href="#">Tədris sahələri</a></li>
+                                <li><a href="#">Haqqımızda</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
                 <div class="btnIcons">
                     <button class="button btn">Müraciət et</button>
                     <div class="icons">
@@ -42,13 +63,23 @@
                             <li><a target="_blank"
                                     href="https://www.facebook.com/profile.php?id=61556143517458&mibextid=LQQJ4d"><i
                                         class="fa-brands fa-facebook" style="color: #1C458D;"></i></a></li>
+                            
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-
+    <hr>
+    <section id="home">
+        <div>
+            <div class="homeSection">
+                <div class="bgImgs">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
