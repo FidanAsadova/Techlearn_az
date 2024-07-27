@@ -67,63 +67,79 @@ table {
   font-family: "Poppins";
 }
 
-body {
-  background-color: #f7f6ff;
+.bodyBg {
+  background: linear-gradient(-45deg, #ee7752, #a8d900, #1c458d, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradientBody 15s ease infinite;
 }
-body .header {
+@keyframes gradientBody {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+.bodyBg .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 13px 20px;
   margin-top: 20px;
-  border-radius: 28px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  background-color: rgba(245, 245, 245, 0.434);
 }
-body .header .logo img {
+.bodyBg .header .logo img {
   width: 100px;
 }
-body .header .header-nav .headerUl {
+.bodyBg .header .header-nav .headerUl {
   display: flex;
   gap: 30px;
 }
-body .header .header-nav .headerUl li a {
+.bodyBg .header .header-nav .headerUl li a {
   list-style: none;
   text-decoration: none;
   color: #1c458d;
   font-family: "Poppins";
+  font-weight: 600;
   font-size: 15px;
 }
-body .header .header-nav .headerUl li a:hover {
+.bodyBg .header .header-nav .headerUl li a:hover {
   text-decoration: underline;
   text-underline-offset: 10px;
+  transition: 0.5s;
 }
-body .header .navBar {
+.bodyBg .header .navBar {
   display: none;
 }
 @media only screen and (max-width: 991px) {
-  body .header .navBar {
+  .bodyBg .header .navBar {
     display: block;
   }
 }
-body .header .btnIcons {
+.bodyBg .header .btnIcons {
   display: flex;
   align-items: center;
   gap: 40px;
 }
-body .header .btnIcons .btn {
+.bodyBg .header .btnIcons .btn {
   font-family: "Poppins";
   border: 1px solid #1c458d;
   border-radius: 25px;
   padding: 8px 20px;
   color: #1c458d;
   font-size: 13px;
+  font-weight: 500;
 }
-body .header .btnIcons .btn:hover {
-  background-color: #1c458d;
-  color: white;
+.bodyBg .header .btnIcons .btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   transition: 0.5s;
 }
-body .header .btnIcons .icons {
+.bodyBg .header .btnIcons .icons {
   display: flex;
   align-items: center;
   gap: 20px;
@@ -161,6 +177,32 @@ body .header .btnIcons .icons {
     display: none;
   }
 }
-#home .homeSection .bgImgs .homeBg {
-  width: 300px;
+#home .homeSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 50px 35px;
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  background-color: rgba(245, 245, 245, 0.434);
+  margin-top: 20px;
+}
+#home .homeSection .homeInfo {
+  color: #1c458d;
+  font-family: "Poppins";
+  font-size: 50px;
+  line-height: 1.2;
+}
+#home .homeSection .btn {
+  font-family: "Poppins";
+  border: 1px solid #1c458d;
+  border-radius: 25px;
+  padding: 8px 20px;
+  color: #1c458d;
+  font-size: 13px;
+  font-weight: 500;
+}
+#home .homeSection .btn:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  transition: 0.5s;
 }/*# sourceMappingURL=main.css.map */

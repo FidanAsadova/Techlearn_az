@@ -1,8 +1,36 @@
 #home {
   .homeSection {
-    .bgImgs {
-      .homeBg {
-        width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 50px 35px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+      rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    background-color: rgba(245, 245, 245, 0.434);
+    margin-top: 20px;
+    .homeInfo {
+      color: #1c458d;
+      font-family: "Poppins";
+      // font-weight: 600;
+      font-size: 50px;
+      line-height: 1.2;
+    }
+    .btn {
+      font-family: "Poppins";
+      border: 1px solid #1c458d;
+      border-radius: 25px;
+      padding: 8px 20px;
+      color: #1c458d;
+      font-size: 13px;
+      font-weight: 500;
+      &:hover {
+        // background-color: #1c458d;
+        // color: white;
+        // box-shadow: rgba(0, 0, 0, 0.35) 0px 4px 12px;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+          rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+        transition: 0.5s;
       }
     }
   }
