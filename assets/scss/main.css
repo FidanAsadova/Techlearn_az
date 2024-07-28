@@ -223,13 +223,20 @@ table {
   padding-right: 60px;
 }
 
+#eduSec {
+  padding-bottom: 30px;
+}
 #eduSec .container .eduSec {
-  padding: 60px;
+  padding: 50px;
+}
+#eduSec .container .eduSec .eduHead {
+  padding-bottom: 20px;
 }
 #eduSec .container .eduSec .eduHead .eduHeadInfo {
   color: white;
   font-size: 35px;
   font-family: Poppins;
+  font-weight: 600;
   position: relative;
 }
 #eduSec .container .eduSec .eduHead .eduHeadInfo::after {
@@ -240,4 +247,28 @@ table {
   width: 60px;
   top: 45px;
   left: 5px;
+}
+#eduSec .container .eduSec .eduBody .eduCards {
+  padding: 10px 15px;
+  gap: 10px;
+}
+#eduSec .container .eduSec .eduBody .eduCards .eduCard {
+  border: 1px solid white;
+  border-radius: 30px;
+  box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
+}
+#eduSec .container .eduSec .eduBody .eduCards .eduCard .cardImg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 15px;
+  gap: 5px;
+}
+#eduSec .container .eduSec .eduBody .eduCards .eduCard .cardImg .cardTitle {
+  font-family: Poppins;
+}
+#eduSec .container .eduSec .eduBody .eduCards .eduCard .cardImg .cardTitle .titleP {
+  color: white;
+  margin-bottom: 10px;
+  font-size: 30px;
 }/*# sourceMappingURL=main.css.map */
