@@ -67,21 +67,14 @@ table {
   font-family: "Poppins";
 }
 
-.bodyBg {
-  background: linear-gradient(-45deg, #ee7752, #a8d900, #1c458d, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradientBody 15s ease infinite;
+.boxDesign {
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+  background-color: rgba(245, 245, 245, 0.434);
 }
-@keyframes gradientBody {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+
+.bodyBg {
+  background: linear-gradient(-45deg, #23d5ab, #bbd4fd, #6e7afc, #1c458d);
 }
 .bodyBg .header {
   display: flex;
@@ -89,9 +82,6 @@ table {
   align-items: center;
   padding: 13px 20px;
   margin-top: 20px;
-  border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  background-color: rgba(245, 245, 245, 0.434);
 }
 .bodyBg .header .logo img {
   width: 100px;
@@ -103,9 +93,8 @@ table {
 .bodyBg .header .header-nav .headerUl li a {
   list-style: none;
   text-decoration: none;
-  color: #1c458d;
+  color: white;
   font-family: "Poppins";
-  font-weight: 600;
   font-size: 15px;
 }
 .bodyBg .header .header-nav .headerUl li a:hover {
@@ -128,12 +117,11 @@ table {
 }
 .bodyBg .header .btnIcons .btn {
   font-family: "Poppins";
-  border: 1px solid #1c458d;
   border-radius: 25px;
   padding: 8px 20px;
-  color: #1c458d;
+  color: white;
   font-size: 13px;
-  font-weight: 500;
+  background-color: #7480fe;
 }
 .bodyBg .header .btnIcons .btn:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
@@ -177,32 +165,79 @@ table {
     display: none;
   }
 }
+#home {
+  padding-bottom: 30px;
+}
 #home .homeSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 50px 35px;
-  border-radius: 30px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-  background-color: rgba(245, 245, 245, 0.434);
+  padding: 70px 50px;
   margin-top: 20px;
 }
-#home .homeSection .homeInfo {
-  color: #1c458d;
+#home .homeSection .heroBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 991px) {
+  #home .homeSection .heroBanner {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+@media only screen and (max-width: 991px) and (max-width: 576px) {
+  #home .homeSection .heroBanner .heroImg {
+    display: none;
+  }
+}
+#home .homeSection .heroBanner .heroInfo .homeInfo {
+  color: white;
   font-family: "Poppins";
   font-size: 50px;
   line-height: 1.2;
 }
-#home .homeSection .btn {
+#home .homeSection .heroBanner .heroInfo .homeP {
   font-family: "Poppins";
-  border: 1px solid #1c458d;
+  color: rgb(240, 240, 240);
+  margin-bottom: 12px;
+  padding: 15px 0;
+  line-height: 1.4;
+}
+#home .homeSection .heroBanner .heroInfo .btn {
+  font-family: "Poppins";
   border-radius: 25px;
   padding: 8px 20px;
   color: #1c458d;
+  color: white;
   font-size: 13px;
   font-weight: 500;
+  background-color: #7480fe;
 }
-#home .homeSection .btn:hover {
+#home .homeSection .heroBanner .heroInfo .btn:hover {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   transition: 0.5s;
+}
+#home .homeSection .heroBanner .heroImg .rightImg {
+  display: flex;
+  padding-right: 60px;
+}
+
+#eduSec .container .eduSec {
+  padding: 60px;
+}
+#eduSec .container .eduSec .eduHead .eduHeadInfo {
+  color: white;
+  font-size: 35px;
+  font-family: Poppins;
+  position: relative;
+}
+#eduSec .container .eduSec .eduHead .eduHeadInfo::after {
+  position: absolute;
+  content: "";
+  height: 3px;
+  background-color: #7480fe;
+  width: 60px;
+  top: 45px;
+  left: 5px;
 }/*# sourceMappingURL=main.css.map */
